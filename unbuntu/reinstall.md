@@ -55,7 +55,7 @@
             
             按 `TAB` 键选择
 3. 安装CUDA
-    1. 这里选择cuda 9.1
+    1. 这里选择cuda 
         从官网下载 安装即可，注意不安装驱动（上面已经安装好了）
     2. cuda 安装完成之后，在`~/.bashrc` 中添加以下环境变量即可。
     
@@ -65,6 +65,8 @@
 
     3. `source ~/.bashrc` 生效
     4. `nvcc -V`检查安装情况
+       -  编译`NVIDIA CUDA SAMPLES` examples失败 提示 `/usr/bin/ld:can not find -lgult`时 安装 `sudo apt-get install freeglut3 freeglut3-dev`
+
     5. 编译 `nvidia cuda samples`
 
 4. 安装 `anaconda`
