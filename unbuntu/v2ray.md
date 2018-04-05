@@ -1,4 +1,4 @@
-centos 7 安装 v2ray
+https://github.com/你的github用户名/你的项目名/raw/master/用来存储图片的文件夹/要添加的图片centos 7 安装 v2ray
 
 #### server端配置
 
@@ -95,13 +95,15 @@ Jan 31 00:32:29 instance-5 v2ray[2392]: An unified platform for anti-censorship.
 
 将下载好的core和GUI程序解压到同一文件夹下。打开GUI程序。
 
-![GUI界面](pics\interface.png)
+![GUI界面](https://github.com/Wanger-SJTU/notes_in_sjtu/raw/master/unbuntu/pics/interface.png)
 
 
 
 选择服务器-> 添加vmess服务器（或者shadowsocks服务器）。
 
-![config](pics\config.png)
+![config](https://github.com/Wanger-SJTU/notes_in_sjtu/raw/master/unbuntu/pics/config.png)
+
+
 
 填入vps的地址，期望的端口。生成一个id。其余的可以不填。确定以后可以看到服务器列表中有了你的服务器。
 
