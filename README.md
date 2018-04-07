@@ -4,12 +4,12 @@
 
 ### notes_config
 
-[ubuntu for deep learning  重装以及环境配置](notes_config\reinstall.md)
+[ubuntu for deep learning  重装以及环境配置](notes_config/reinstall.md)
 
-[v2ray 梯子搭建](notes_config\v2ray.md)
+[v2ray 梯子搭建](notes_config/v2ray.md)
 
-[windows 编译pytorch](notes_config\PyTorch_win.md)
+[windows 编译pytorch](notes_config/PyTorch_win.md)
 
 ### utils
 
-[convert png indexed to RGB](utils\png_file_rgb_index.ipynb)
+[convert png indexed to RGB](utils/png_file_rgb_index.ipynb)
