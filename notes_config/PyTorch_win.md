@@ -15,7 +15,8 @@
     |   8.0   | 2013/2015 |
     | 9.0/9.1 | 2015/2017*|
     **注：** Cuda对VS2017支持的C/C++编译器仅限于19.11版本，不支持19.12和19.13。如需使用VS2017，请按以下步骤将默认C/C++编译器切换至19.11版本。
-    **检查方法：** 开始菜单->Visual Studio 2017->适用于 VS 2017 的 x64 本机工具命令提示，输入`cl.exe`，即可看到当前使用的C/C++编译器版本
+    **检查方法：** 开始菜单->`Visual Studio 2017`->`适用于 VS 2017 的 x64 本机工具命令提示`，输入`cl.exe`，即可看到当前使用的C/C++编译器版本cl.exe
+
     **切换方法：**
 
     1. `开始菜单`->`Visual Studio Installer`->`修改`->`单个组件`->勾选`VC++ 2017 版本 15.4 v14.11 工具集`->修改
@@ -45,7 +46,7 @@
     xcopy /Y aten\src\ATen\common_with_cwrap.py tools\shared\cwrap_common.py
     ```
     **注：**
-    - 必须使用--recursive的方式下载，不可以直接从github上下载zip压缩包，因为github上下载的源代码不包含众多submodules
+    - 必须使用 `--recursive` 的方式下载，不可以直接从GitHub上下载zip压缩包，因为GitHub上下载的源代码不包含众多submodules
     - 请自备梯子，否则下载过程会很痛苦
     - 不要忘记将复制common_with_cwrap，否则编译会出错
     - 可能存在一个快捷方式的cwrap_common.py文件。需要先删除，不然有共享冲突

@@ -1,6 +1,6 @@
 https://github.com/你的github用户名/你的项目名/raw/master/用来存储图片的文件夹/要添加的图片centos 7 安装 v2ray
 
-#### server端配置
+### server端配置
 
 vps要求：
 
@@ -50,7 +50,7 @@ vps要求：
 
   ​
 
-#### server端安装
+### server端安装
 
 Linux服务器下面命令基本一样。这里的安装方式跟[官方教程一样](https://www.v2ray.com/chapter_00/install.html)
 
@@ -95,13 +95,13 @@ Jan 31 00:32:29 instance-5 v2ray[2392]: An unified platform for anti-censorship.
 
 将下载好的core和GUI程序解压到同一文件夹下。打开GUI程序。
 
-![GUI界面](https://github.com/Wanger-SJTU/notes_in_sjtu/raw/master/unbuntu/pics/interface.png)
+![GUI界面](pics/interface.png)
 
 
 
 选择服务器-> 添加vmess服务器（或者shadowsocks服务器）。
 
-![config](https://github.com/Wanger-SJTU/notes_in_sjtu/raw/master/unbuntu/pics/config.png)
+![config](pics/config.png)
 
 
 
@@ -111,7 +111,7 @@ Jan 31 00:32:29 instance-5 v2ray[2392]: An unified platform for anti-censorship.
 
 会提示保存一个文件。存为`config.json`
 
-### OS X
+#### OS X
 
 [core](https://www.v2ray.com/chapter_00/install.html)
 
