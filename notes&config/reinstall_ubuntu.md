@@ -132,3 +132,17 @@
 8. 安装 `chrome`
 
 9. 安装 `ROS` 
+
+####Linux 平台下一些软件
+
+1. 下载软件
+
+    - [Persepolis Download Manager](https://github.com/persepolisdm/persepolis)
+
+      Persepolis Download Manager （以下简称 PDM）是著名命令行下载工具 Aria2 的一款零配置 GUI 客户端，即使你是对命令行一无所知的小白，也能轻松玩转。
+
+      首先介绍一下 Aria2，这是一款开源的跨平台下载工具，占用少、体积轻盈而功能强大，支持 HTTP、HTTPS、FTP、SFTP、BitTorrent 和 Metalink 等众多下载协议，是极客们的下载神器。
+
+      然而，Aria2 需要学习使用命令行操作，编写复杂的配置文件，门槛居高不下。而 PDM 就是专为大众打造的 Aria 图形界面客户端，它同样支持 Aria2 的各种功能，但是所有界面均直观易懂，推荐给想尝试 Aria2 的各位使用。
+
+2. ​
