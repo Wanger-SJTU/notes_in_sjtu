@@ -1,6 +1,6 @@
 **问题描述**		
 
-![](../pics/git_err1.png)
+![](../../pics/git_err1.png)
 
 > [remote rejected] master -> master (pre-receive hook declined)
 > error: failed to push some refs to 'git@github.com:Wanger-SJTU/FCN-in-the-wild.git'

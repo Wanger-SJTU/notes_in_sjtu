@@ -24,7 +24,7 @@
 
     可以到`git` 命令执行以后的 `git log graph `变化。了解`git `分支处理。
 
-    ![learngitbranching](pics/learngitbranching.png)
+    ![learngitbranching](../pics/learngitbranching.png)
 
   - [TryGit](http://try.github.io)
 

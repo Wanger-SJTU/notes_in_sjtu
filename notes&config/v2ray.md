@@ -95,13 +95,13 @@ Jan 31 00:32:29 instance-5 v2ray[2392]: An unified platform for anti-censorship.
 
 将下载好的core和GUI程序解压到同一文件夹下。打开GUI程序。
 
-![GUI界面](pics/interface.png)
+![GUI界面](../pics/interface.png)
 
 
 
 选择服务器-> 添加vmess服务器（或者shadowsocks服务器）。
 
-![config](pics/config.png)
+![config](../pics/config.png)
 
 
 
