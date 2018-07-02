@@ -41,3 +41,9 @@ from data.data_utils import resize_input
 原因
 
 > 在两个文件中，PIL.Image引用的两个名称不一致冲突
+
+
+
+# non-default argument follows default argument
+
+把含有默认值的参数放在了不含默认值的参数的前面，这样问题就好解决了，调换一下参数的位置就好了 

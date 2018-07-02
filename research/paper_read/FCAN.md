@@ -42,5 +42,5 @@ loss 即为
 $$
 \min_{x_o}\sum_{l\in L}w_t^l Dist(G_o^l, \bar{G}_t^l)
 $$
-在论文的实验中采用的是`ResNet50`作为基本的CNN的结构。并且使用的是$L=\{conv1, res2c, res3d, res4f,res5c\}​$作为风格特征提取。
+在论文的实验中采用的是`ResNet50`作为基本的CNN的结构。并且使用的是$L=\{conv1, res2c, res3d, res4f,res5c\}$作为风格特征提取输入。
 

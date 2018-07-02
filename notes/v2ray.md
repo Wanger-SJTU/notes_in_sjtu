@@ -128,7 +128,7 @@ Jan 31 00:32:29 instance-5 v2ray[2392]: An unified platform for anti-censorship.
 - ssh连接到vps， 目录切换到 `\etc\v2ray`
 
 ```
-cd \etc\v2ray
+cd /etc/v2ray
 vi config.py
 ```
 
