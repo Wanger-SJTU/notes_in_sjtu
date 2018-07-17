@@ -44,3 +44,8 @@ $$
 $$
 在论文的实验中采用的是`ResNet50`作为基本的CNN的结构。并且使用的是$L=\{conv1, res2c, res3d, res4f,res5c\}$作为风格特征提取输入。
 
+
+
+![1531740951086](./pics/FCAN/AAN_result.png)
+
+##RAN
