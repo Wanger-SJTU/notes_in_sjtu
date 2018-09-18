@@ -68,3 +68,43 @@ func =get_model("Test")
 > test created
 > ```
 
+#####  一种我还没搞懂的方式
+
+`models.py`
+
+```python
+models = {}
+def register_model(name):
+  def decorator(cls):
+    models[name] = cls
+    return cls
+  return decorator
+
+def get_object(name, **args):
+  net = models[name](**args)
+  return net
+```
+
+`Test.py`
+
+```python
+from models import register_model, get_object
+@register_model("Test")
+class Test:
+  def __init__(self):
+    print("test created")
+  def __call__(self):
+    print("test called")
+    return 0
+```
+
+`main.py`
+
+```python
+from models import get_object
+from testclass import Test
+get_object('Test')()
+```
+
+> test created
+> test called
