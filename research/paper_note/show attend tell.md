@@ -2,6 +2,8 @@
 
 ## 模型结构
 
+![](./pics/caption/show attention tell.png)
+
 ![img](https://pic1.zhimg.com/80/v2-af95d9c4d85fd7c65dccf5662e6868bf_hd.jpg)
 
 流程大致如下：
@@ -60,7 +62,7 @@ $$
 
  需要明确，attention要实现的是在解码的不同时刻可以关注不同的图像区域，进而可以生成更合理的词。那么，在attention中就有两个比较关键的量，一个是和时刻 t 相关，对应于解码时刻；另一个是输入序列的区域  $a_i $，对应图像的一个区域。
 
-实现这种机制的方式就是在时刻$ t​$ ，为输入序列的各个区域$ i​$ 计算出一个权重 $α_{ti}​$ 。因为需要满足输入序列的各个区域的权重是加和为一的，使用`Softmax`来实现这一点。至于`Softmax`需要输入的信息，则如上所讲，需要包含两个方面：一个是被计算的区域 $a_i​$ ，另一个就是上一时刻 t-1 的信息 $h_{t−1}​$ 
+实现这种机制的方式就是在时刻$ t$ ，为输入序列的各个区域$ i$ 计算出一个权重 $α_{ti}$ 。因为需要满足输入序列的各个区域的权重是加和为一的，使用`Softmax`来实现这一点。至于`Softmax`需要输入的信息，则如上所讲，需要包含两个方面：一个是被计算的区域 $a_i$ ，另一个就是上一时刻 t-1 的信息 $h_{t−1}$ 
 $$
 e_{ti}=f_{\text{att}}(\textbf a_i,\textbf h_{t-1})
 $$
@@ -78,7 +80,24 @@ $$
 这个函数 $ϕ$ 就代指文中提出的两种attention机制，对应于将权重施加到图像区域到两种不同的策略。
 
 **soft attention**
+$$
+\text{E}_{p(s_t|a)}[\hat{z}_t]=\sum_{i=1}^{L}\alpha_{t,i}a_i
+$$
 
-
+![so'f't](https://jhui.github.io/assets/att/soft.png)
 
 **hard attention**
+
+在soft attention中，我们采用的是加权求和的方式得到$z_t$的。前面我们得到的$\sum \alpha_i=1$，因此可以把$\alpha_i$解释为我们注意到第$i$个特征区域的可能性（置信度）。所以在hard attention中，我们是把$\alpha_i$看作从$x_i$中的采样率.
+
+![的hard](https://jhui.github.io/assets/att/hard.png)
+
+hard attention 使用采样的方法替代了确定性的计算方法。反向传播过程中使用MC（蒙特卡洛）方法采样平均我们的计算梯度。
+
+> Soft attention is more popular because the backpropagation seems more effective.
+
+---
+
+ref:
+
+1. https://jhui.github.io/2017/03/15/Soft-and-hard-attention/
